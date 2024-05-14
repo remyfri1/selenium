@@ -1,0 +1,407 @@
+{
+  "id": "81b9ac0b-34e2-4d54-9e1b-8e1a7812e4cc",
+  "version": "2.0",
+  "name": "DEVOPS_Remy",
+  "url": "https://www.post.ch",
+  "tests": [{
+    "id": "032edb0c-31d4-42ba-9502-d4c8cd908cc6",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "cabad403-c731-4982-85ba-a1388fe931eb",
+    "name": "Check_ankunft_datum",
+    "commands": [{
+      "id": "f0787eaa-a8f4-4791-83ae-71a627b526b0",
+      "comment": "",
+      "command": "open",
+      "target": "/de/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a68796f-42df-4334-bd30-7e843b873d46",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f8a5658-bd1b-418d-ad92-8b81a9596fad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ppm-text-input__label",
+      "targets": [
+        ["css=.ppm-text-input__label", "css:finder"],
+        ["xpath=//main[@id='main']/section/div/form/div/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Sendungsnummer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb8c3f3a-d8b9-420c-989c-8c94da7fe92f",
+      "comment": "",
+      "command": "type",
+      "target": "id=text-input-icon-id",
+      "targets": [
+        ["id=text-input-icon-id", "id"],
+        ["name=text-input", "name"],
+        ["css=#text-input-icon-id", "css:finder"],
+        ["xpath=//input[@id='text-input-icon-id']", "xpath:attributes"],
+        ["xpath=//main[@id='main']/section/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "996013537319542251"
+    }, {
+      "id": "5d0107e9-a062-4bb4-8e7d-c4100ba4dbfc",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=text-input-icon-id",
+      "targets": [
+        ["id=text-input-icon-id", "id"],
+        ["name=text-input", "name"],
+        ["css=#text-input-icon-id", "css:finder"],
+        ["xpath=//input[@id='text-input-icon-id']", "xpath:attributes"],
+        ["xpath=//main[@id='main']/section/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "3b50a0c7-d85f-4d20-bb85-4fb8ddd65b15",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.h4",
+      "targets": [
+        ["css=.h4", "css:finder"],
+        ["xpath=(//div[@id='globalStatusDelivered']/div[2]/span)[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/ekp-delivery-date/div/div/div[2]/span", "xpath:position"]
+      ],
+      "value": "Tuesday, 14 May 2024"
+    }]
+  }, {
+    "id": "d6c19cd2-04e3-4738-b0f0-67d51b827291",
+    "name": "Check_adresse",
+    "commands": [{
+      "id": "ebf05f5e-9ccf-451f-9ab9-79f80e53721b",
+      "comment": "",
+      "command": "open",
+      "target": "/de",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a490c899-fa90-405d-a065-fec684645a6f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "970x847",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34c4c3a9-e646-438b-8f54-03b69eb681e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ppm-text-input__label",
+      "targets": [
+        ["css=.ppm-text-input__label", "css:finder"],
+        ["xpath=//main[@id='main']/section/div/form/div/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Sendungsnummer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "60726e36-1286-4408-aa99-2ace32c6c28e",
+      "comment": "",
+      "command": "type",
+      "target": "id=text-input-icon-id",
+      "targets": [
+        ["id=text-input-icon-id", "id"],
+        ["name=text-input", "name"],
+        ["css=#text-input-icon-id", "css:finder"],
+        ["xpath=//input[@id='text-input-icon-id']", "xpath:attributes"],
+        ["xpath=//main[@id='main']/section/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "996013537319542251"
+    }, {
+      "id": "d9214e59-cac2-4107-b486-f32ebbde5457",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//main[@id='main']/section/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Suchen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d231ab5-ff2e-43bc-9c22-624d4f8f5fa9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pi-2040",
+      "targets": [
+        ["css=.pi-2040", "css:finder"],
+        ["xpath=//div[@id='detail']/div[5]/ekp-tab-details/div/ekp-event-timeline/div/div[2]/div/a/span", "xpath:idRelative"],
+        ["xpath=//div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e42c6ef6-49a9-4ef0-9fa9-c148a481aeb8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.fw-bold > .col-8 > div > div:nth-child(1)",
+      "targets": [
+        ["css=.fw-bold > .col-8 > div > div:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='detail']/div[5]/ekp-tab-details/div/ekp-event-timeline/div/div/ekp-event-day/div/div/div[2]/ekp-event-item/div/div[3]/div/div", "xpath:idRelative"],
+        ["xpath=//ekp-event-item/div/div[3]/div/div", "xpath:position"]
+      ],
+      "value": "Delivered"
+    }]
+  }, {
+    "id": "c81214a0-7ee0-49c5-ab94-664c7bcf7f09",
+    "name": "Check_sendungsnummer",
+    "commands": [{
+      "id": "78aa0b60-b89e-4ec9-a64c-2797de194da4",
+      "comment": "",
+      "command": "open",
+      "target": "/de",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a709b5a-165e-41e5-a07d-c556e2b1ab9c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "970x848",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8c82f04-4cd2-4b28-824a-436ee95a7a78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ppm-text-input__label",
+      "targets": [
+        ["css=.ppm-text-input__label", "css:finder"],
+        ["xpath=//main[@id='main']/section/div/form/div/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Sendungsnummer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "65b68eea-e262-4e8f-9baf-cd2816584814",
+      "comment": "",
+      "command": "type",
+      "target": "id=text-input-icon-id",
+      "targets": [
+        ["id=text-input-icon-id", "id"],
+        ["name=text-input", "name"],
+        ["css=#text-input-icon-id", "css:finder"],
+        ["xpath=//input[@id='text-input-icon-id']", "xpath:attributes"],
+        ["xpath=//main[@id='main']/section/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "996013537319542251"
+    }, {
+      "id": "6ea1841d-f53d-4598-9604-6cf0b3a1652b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=text-input-icon-id",
+      "targets": [
+        ["id=text-input-icon-id", "id"],
+        ["name=text-input", "name"],
+        ["css=#text-input-icon-id", "css:finder"],
+        ["xpath=//input[@id='text-input-icon-id']", "xpath:attributes"],
+        ["xpath=//main[@id='main']/section/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "c934ccb3-6673-456e-a611-35897bc70720",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col-sm-12 > .h5",
+      "targets": [
+        ["css=.col-sm-12 > .h5", "css:finder"],
+        ["xpath=//div[@id='shipmentNumberRow']/div/span", "xpath:idRelative"],
+        ["xpath=//ekp-detail-header/div/div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'99.60.135373.19542251')]", "xpath:innerText"]
+      ],
+      "value": "99.60.135373.19542251"
+    }]
+  }, {
+    "id": "e859774f-06c3-4c4b-ba3d-e0da9d389af2",
+    "name": "Assert_test",
+    "commands": [{
+      "id": "551875b2-096c-4efb-8e80-116ad2213a78",
+      "comment": "",
+      "command": "open",
+      "target": "/de",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4078c5b-5d0f-4ed8-98bd-9b381d744a7e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "970x847",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f1d3bd4-cdb3-410f-815e-b724471f6a44",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ppm-text-input__label",
+      "targets": [
+        ["css=.ppm-text-input__label", "css:finder"],
+        ["xpath=//main[@id='main']/section/div/form/div/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Sendungsnummer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "510ae3ed-b005-4d1c-b392-9173c67e9281",
+      "comment": "",
+      "command": "type",
+      "target": "id=text-input-icon-id",
+      "targets": [
+        ["id=text-input-icon-id", "id"],
+        ["name=text-input", "name"],
+        ["css=#text-input-icon-id", "css:finder"],
+        ["xpath=//input[@id='text-input-icon-id']", "xpath:attributes"],
+        ["xpath=//main[@id='main']/section/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "996013537319542251"
+    }, {
+      "id": "914b9239-2cc9-4210-9dba-b7f55fe9f5a6",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=text-input-icon-id",
+      "targets": [
+        ["id=text-input-icon-id", "id"],
+        ["name=text-input", "name"],
+        ["css=#text-input-icon-id", "css:finder"],
+        ["xpath=//input[@id='text-input-icon-id']", "xpath:attributes"],
+        ["xpath=//main[@id='main']/section/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "3421576b-64c8-4e5d-ab47-18dbf71c7009",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.h4",
+      "targets": [
+        ["css=.h4", "css:finder"],
+        ["xpath=(//div[@id='globalStatusDelivered']/div[2]/span)[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/ekp-delivery-date/div/div/div[2]/span", "xpath:position"]
+      ],
+      "value": "Tuesday, 14 May 2024"
+    }]
+  }, {
+    "id": "ed9a8368-2113-4823-9558-797f4052ef70",
+    "name": "Assert_Editable_consignment_search",
+    "commands": [{
+      "id": "a9354091-a9c6-42e2-99e1-0c4faa66b360",
+      "comment": "",
+      "command": "open",
+      "target": "/de",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4d99bba-6e19-42a9-a638-87609aa0c711",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "970x847",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8d886c7-401b-46c6-9fc5-9776a9f11f0a",
+      "comment": "",
+      "command": "click",
+      "target": "id=text-input-icon-id",
+      "targets": [
+        ["id=text-input-icon-id", "id"],
+        ["name=text-input", "name"],
+        ["css=#text-input-icon-id", "css:finder"],
+        ["xpath=//input[@id='text-input-icon-id']", "xpath:attributes"],
+        ["xpath=//main[@id='main']/section/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9348fde6-9bd2-4aaf-88ce-ac0dcce30a78",
+      "comment": "",
+      "command": "type",
+      "target": "id=text-input-icon-id",
+      "targets": [
+        ["id=text-input-icon-id", "id"],
+        ["name=text-input", "name"],
+        ["css=#text-input-icon-id", "css:finder"],
+        ["xpath=//input[@id='text-input-icon-id']", "xpath:attributes"],
+        ["xpath=//main[@id='main']/section/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "996013537319542251"
+    }, {
+      "id": "f93649e3-3765-461b-805b-d489c2063676",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=text-input-icon-id",
+      "targets": [
+        ["id=text-input-icon-id", "id"],
+        ["name=text-input", "name"],
+        ["css=#text-input-icon-id", "css:finder"],
+        ["xpath=//input[@id='text-input-icon-id']", "xpath:attributes"],
+        ["xpath=//main[@id='main']/section/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "cdf4eab3-91e4-4668-9a21-c8a342ba3056",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pi-1-5x",
+      "targets": [
+        ["css=.pi-1-5x", "css:finder"],
+        ["xpath=//div[@id='detail']/div/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2598ee4-6da5-401f-98bb-7215be42f9e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchValue",
+      "targets": [
+        ["id=searchValue", "id"],
+        ["name=searchValue", "name"],
+        ["css=#searchValue", "css:finder"],
+        ["xpath=//input[@id='searchValue']", "xpath:attributes"],
+        ["xpath=//main[@id='os_content']/app-root/main/ekp-shipments-dashboard/div[2]/div/ekp-shipment-search/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c924ba68-8ada-4628-9b0a-3f9cf064b525",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=searchValue",
+      "targets": [
+        ["id=searchValue", "id"],
+        ["name=searchValue", "name"],
+        ["css=#searchValue", "css:finder"],
+        ["xpath=//input[@id='searchValue']", "xpath:attributes"],
+        ["xpath=//main[@id='os_content']/app-root/main/ekp-shipments-dashboard/div[2]/div/ekp-shipment-search/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "dbdeb50b-fe24-4d0c-9685-3c05003defb8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["032edb0c-31d4-42ba-9502-d4c8cd908cc6"]
+  }],
+  "urls": ["https://www.post.ch/"],
+  "plugins": []
+}
